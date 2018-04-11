@@ -11,6 +11,7 @@ class Solution:
         # 初始化一个链表
         res = cur = ListNode(0)
 
+        # 当 l1 和 l2 两个链表中最后一个节点中 val 相加的值大于 10 时, carry == 1 需要再次进入循环
         while l1 or l2 or carry:
             if l1:
                 carry += l1.val
